@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": "demo-user",
+      "firstName": "Demo",
+      "lastName": "User",
+      "email": "demo@azukadashboard.com",
+      "password": "demo123",
+      "joined": "2024-12-01T10:30:00Z",
+      "preferences": {
+        "theme": "light",
+        "dailyReminders": true,
+        "weeklyReports": true,
+        "goalNotifications": true
+      },
+      "stats": {
+        "goals": 3,
+        "tasks": 12,
+        "streak": 7,
+        "productivity": 85
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-1",
+      "userId": "demo-user",
+      "title": "Complete Web Development Course",
+      "description": "Finish the complete web development bootcamp with all projects",
+      "category": "education",
+      "priority": "high",
+      "deadline": "2024-12-31",
+      "target": "100% completion",
+      "progress": 65,
+      "createdAt": "2024-11-15T09:00:00Z",
+      "milestones": [
+        {
+          "title": "Complete HTML/CSS modules",
+          "completed": true
+        },
+        {
+          "title": "Finish JavaScript course",
+          "completed": true
+        },
+        {
+          "title": "Build final project",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "goal-2",
+      "userId": "demo-user",
+      "title": "Lose 5kg Weight",
+      "description": "Achieve weight loss through diet and regular exercise",
+      "category": "health",
+      "priority": "medium",
+      "deadline": "2025-01-31",
+      "target": "5kg",
+      "progress": 40,
+      "createdAt": "2024-11-20T14:30:00Z",
+      "milestones": [
+        {
+          "title": "Establish workout routine",
+          "completed": true
+        },
+        {
+          "title": "Lose first 2kg",
+          "completed": false
+        },
+        {
+          "title": "Reach target weight",
+          "completed": false
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "userId": "demo-user",
+      "title": "Complete project documentation",
+      "description": "Write detailed documentation for the web development project",
+      "category": "work",
+      "priority": "high",
+      "dueDate": "2024-12-15",
+      "estimatedTime": 2,
+      "completed": false,
+      "createdAt": "2024-12-07T09:00:00Z",
+      "tags": ["documentation", "project"]
+    },
+    {
+      "id": "task-2",
+      "userId": "demo-user",
+      "title": "Study JavaScript modules",
+      "description": "Learn about ES6 modules and imports",
+      "category": "learning",
+      "priority": "medium",
+      "dueDate": "2024-12-10",
+      "estimatedTime": 1.5,
+      "completed": true,
+      "completedAt": "2024-12-07T11:30:00Z",
+      "tags": ["javascript", "learning"]
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-1",
+      "userId": "demo-user",
+      "type": "task_completed",
+      "title": "Completed task: Study JavaScript modules",
+      "description": "Spent 1.5 hours learning about ES6 modules",
+      "timestamp": "2024-12-07T11:30:00Z",
+      "data": {
+        "taskId": "task-2",
+        "timeSpent": 90
+      }
+    },
+    {
+      "id": "activity-2",
+      "userId": "demo-user",
+      "type": "goal_updated",
+      "title": "Updated goal progress",
+      "description": "Web Development Course progress increased to 65%",
+      "timestamp": "2024-12-06T16:45:00Z",
+      "data": {
+        "goalId": "goal-1",
+        "oldProgress": 60,
+        "newProgress": 65
+      }
+    }
+  ]
+}
