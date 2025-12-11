@@ -871,3 +871,28 @@ class AzukaDashboard {
 document.addEventListener('DOMContentLoaded', () => {
     window.azukaApp = new AzukaDashboard();
 });
+
+// Add timer functionality to the quick actions
+document.addEventListener('DOMContentLoaded', function() {
+    // Quick start timer button
+    const quickStartBtn = document.getElementById('quickStartTimer');
+    if (quickStartBtn) {
+        quickStartBtn.addEventListener('click', function() {
+            if (window.timer) {
+                window.timer.quickStart(25); // Start 25-minute timer
+            } else {
+                alert('Timer functionality is not available. Please refresh the page.');
+            }
+        });
+    }
+});
+// Initialize the application
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Theme Manager
+    const themeManager = new ThemeManager();
+    
+    // Your other initialization code here...
+    
+    // Make theme manager available globally if needed
+    window.themeManager = themeManager;
+});

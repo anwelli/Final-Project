@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azuka Dashboard - Track your productivity, set goals, manage tasks, and analyze your performance in one intuitive dashboard.">
+    <meta name="author" content="Azuka Team">
     <title>Azuka Dashboard | Productivity Tracker</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -10,14 +12,14 @@
     <link rel="stylesheet" href="styles/auth.css">
     <link rel="stylesheet" href="styles/components.css">
 </head>
-<body>
+<body data-theme="light">
     <!-- Authentication Section -->
-    <section id="authSection" class="auth-section">
+    <div id="authSection" class="auth-section">
         <div class="auth-container">
             <div class="auth-card">
                 <div class="auth-header">
                     <div class="logo">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
                         <h1>Azuka Dashboard</h1>
                     </div>
                     <p class="tagline">Track your productivity, achieve your goals</p>
@@ -28,19 +30,19 @@
                     <h2>Welcome Back</h2>
                     <div class="form-group">
                         <label for="loginEmail">
-                            <i class="fas fa-envelope"></i> Email Address
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Email Address
                         </label>
                         <input type="email" id="loginEmail" placeholder="you@example.com" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="loginPassword">
-                            <i class="fas fa-lock"></i> Password
+                            <i class="fas fa-lock" aria-hidden="true"></i> Password
                         </label>
                         <div class="password-wrapper">
                             <input type="password" id="loginPassword" placeholder="Enter your password" required>
-                            <button type="button" class="toggle-password" data-target="loginPassword">
-                                <i class="fas fa-eye"></i>
+                            <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Show password">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
                             </button>
                         </div>
                         <a href="#" class="forgot-link" id="showForgot">Forgot password?</a>
@@ -54,7 +56,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fas fa-sign-in-alt"></i> Sign In
+                        <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Sign In
                     </button>
 
                     <div class="auth-divider">
@@ -63,10 +65,10 @@
 
                     <div class="social-auth">
                         <button type="button" class="social-btn google">
-                            <i class="fab fa-google"></i> Google
+                            <i class="fab fa-google" aria-hidden="true"></i> Google
                         </button>
                         <button type="button" class="social-btn github">
-                            <i class="fab fa-github"></i> GitHub
+                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
                         </button>
                     </div>
 
@@ -88,13 +90,13 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="firstName">
-                                <i class="fas fa-user"></i> First Name
+                                <i class="fas fa-user" aria-hidden="true"></i> First Name
                             </label>
                             <input type="text" id="firstName" placeholder="John" required>
                         </div>
                         <div class="form-group">
                             <label for="lastName">
-                                <i class="fas fa-user"></i> Last Name
+                                <i class="fas fa-user" aria-hidden="true"></i> Last Name
                             </label>
                             <input type="text" id="lastName" placeholder="Doe" required>
                         </div>
@@ -102,19 +104,19 @@
 
                     <div class="form-group">
                         <label for="signupEmail">
-                            <i class="fas fa-envelope"></i> Email Address
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Email Address
                         </label>
                         <input type="email" id="signupEmail" placeholder="you@example.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="signupPassword">
-                            <i class="fas fa-lock"></i> Password
+                            <i class="fas fa-lock" aria-hidden="true"></i> Password
                         </label>
                         <div class="password-wrapper">
                             <input type="password" id="signupPassword" placeholder="Create a strong password" required>
-                            <button type="button" class="toggle-password" data-target="signupPassword">
-                                <i class="fas fa-eye"></i>
+                            <button type="button" class="toggle-password" data-target="signupPassword" aria-label="Show password">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
                             </button>
                         </div>
                         <div class="password-strength">
@@ -127,12 +129,12 @@
 
                     <div class="form-group">
                         <label for="confirmPassword">
-                            <i class="fas fa-lock"></i> Confirm Password
+                            <i class="fas fa-lock" aria-hidden="true"></i> Confirm Password
                         </label>
                         <div class="password-wrapper">
                             <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
-                            <button type="button" class="toggle-password" data-target="confirmPassword">
-                                <i class="fas fa-eye"></i>
+                            <button type="button" class="toggle-password" data-target="confirmPassword" aria-label="Show password">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -149,7 +151,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fas fa-user-plus"></i> Create Account
+                        <i class="fas fa-user-plus" aria-hidden="true"></i> Create Account
                     </button>
 
                     <p class="auth-switch">
@@ -163,14 +165,14 @@
                     <h2>Reset Password</h2>
                     <div class="form-group">
                         <label for="resetEmail">
-                            <i class="fas fa-envelope"></i> Email Address
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Email Address
                         </label>
                         <input type="email" id="resetEmail" placeholder="you@example.com" required>
                         <p class="help-text">Enter your email to receive reset instructions</p>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fas fa-paper-plane"></i> Send Reset Link
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Reset Link
                     </button>
 
                     <p class="auth-switch">
@@ -178,114 +180,133 @@
                         <a href="#" class="switch-link" id="showLoginFromForgot">Sign in</a>
                     </p>
                 </form>
+
+                <!-- Authentication Footer -->
+                <footer class="auth-footer">
+                    <div class="footer-content">
+                        <div class="footer-links">
+                            <a href="#" class="footer-link">Terms of Service</a>
+                            <span class="footer-separator">•</span>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                            <span class="footer-separator">•</span>
+                            <a href="#" class="footer-link">Support</a>
+                            <span class="footer-separator">•</span>
+                            <a href="#" class="footer-link">Contact</a>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>&copy; <span id="currentYear"></span> Azuka Dashboard. All rights reserved.</p>
+                            <p class="footer-version">Version 1.0.0</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Main Application Section -->
-    <section id="appSection" class="app-section hidden">
+    <div id="appSection" class="app-section hidden">
         <!-- Navigation -->
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="nav-container">
                 <div class="nav-brand">
                     <div class="logo">
-                        <i class="fas fa-chart-line"></i>
-                        <h1>Azuka Dashboard</h1>
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <h2 class="nav-brand-heading">Azuka Dashboard</h2>
                     </div>
                 </div>
 
                 <ul class="nav-menu">
                     <li>
                         <a href="#" class="nav-link active" data-page="dashboard">
-                            <i class="fas fa-home"></i>
+                            <i class="fas fa-home" aria-hidden="true"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link" data-page="goals">
-                            <i class="fas fa-bullseye"></i>
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
                             <span>Goals</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link" data-page="tasks">
-                            <i class="fas fa-tasks"></i>
+                            <i class="fas fa-tasks" aria-hidden="true"></i>
                             <span>Tasks</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link" data-page="analytics">
-                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
                             <span>Analytics</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link" data-page="profile">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user" aria-hidden="true"></i>
                             <span>Profile</span>
                         </a>
                     </li>
                 </ul>
 
                 <div class="nav-actions">
-                    <button class="nav-action-btn" id="themeToggle" title="Toggle theme">
-                        <i class="fas fa-moon"></i>
+                    <button class="nav-action-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
                     </button>
                     <div class="notification-bell">
-                        <button class="nav-action-btn" id="notificationsBtn" title="Notifications">
-                            <i class="fas fa-bell"></i>
+                        <button class="nav-action-btn" id="notificationsBtn" title="Notifications" aria-label="View notifications">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
                             <span class="notification-count">3</span>
                         </button>
                     </div>
                     <div class="user-dropdown">
-                        <button class="user-btn" id="userMenuBtn">
-                            <div class="user-avatar" id="userAvatar">JD</div>
+                        <button class="user-btn" id="userMenuBtn" aria-label="User menu" aria-expanded="false" aria-haspopup="true">
+                            <span class="user-avatar" id="userAvatar">JD</span>
                             <span id="userName">John Doe</span>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </button>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item" data-page="profile">
-                                <i class="fas fa-user-cog"></i> Profile Settings
+                        <div class="dropdown-menu" role="menu" aria-labelledby="userMenuBtn">
+                            <a href="#" class="dropdown-item" data-page="profile" role="menuitem">
+                                <i class="fas fa-user-cog" aria-hidden="true"></i> Profile Settings
                             </a>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-cog"></i> Settings
+                            <a href="#" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-cog" aria-hidden="true"></i> Settings
                             </a>
-                            <div class="dropdown-divider"></div>
-                            <button class="dropdown-item" id="logoutBtn">
-                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            <div class="dropdown-divider" role="separator"></div>
+                            <button class="dropdown-item" id="logoutBtn" role="menuitem">
+                                <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sign Out
                             </button>
                         </div>
                     </div>
-                    <button class="mobile-menu-btn" id="mobileMenuBtn">
-                        <i class="fas fa-bars"></i>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
         </nav>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile menu">
             <div class="mobile-menu-header">
                 <h3>Menu</h3>
-                <button class="close-menu" id="closeMobileMenu">
-                    <i class="fas fa-times"></i>
+                <button class="close-menu" id="closeMobileMenu" aria-label="Close menu">
+                    <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="mobile-menu-items">
                 <a href="#" class="mobile-menu-item active" data-page="dashboard">
-                    <i class="fas fa-home"></i> Dashboard
+                    <i class="fas fa-home" aria-hidden="true"></i> Dashboard
                 </a>
                 <a href="#" class="mobile-menu-item" data-page="goals">
-                    <i class="fas fa-bullseye"></i> Goals
+                    <i class="fas fa-bullseye" aria-hidden="true"></i> Goals
                 </a>
                 <a href="#" class="mobile-menu-item" data-page="tasks">
-                    <i class="fas fa-tasks"></i> Tasks
+                    <i class="fas fa-tasks" aria-hidden="true"></i> Tasks
                 </a>
                 <a href="#" class="mobile-menu-item" data-page="analytics">
-                    <i class="fas fa-chart-bar"></i> Analytics
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i> Analytics
                 </a>
                 <a href="#" class="mobile-menu-item" data-page="profile">
-                    <i class="fas fa-user"></i> Profile
+                    <i class="fas fa-user" aria-hidden="true"></i> Profile
                 </a>
             </div>
         </div>
@@ -293,13 +314,13 @@
         <!-- Main Content -->
         <main class="main-content">
             <!-- Sidebar -->
-            <aside class="sidebar" id="sidebar">
+            <aside class="sidebar" id="sidebar" aria-label="Sidebar">
                 <div class="sidebar-section">
-                    <h3>Quick Stats</h3>
+                    <h2>Quick Stats</h2>
                     <div class="stats-grid">
                         <div class="stat-card">
                             <div class="stat-icon">
-                                <i class="fas fa-bullseye"></i>
+                                <i class="fas fa-bullseye" aria-hidden="true"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="stat-value" id="statActiveGoals">0</div>
@@ -308,7 +329,7 @@
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="stat-value" id="statCompletedTasks">0</div>
@@ -317,7 +338,7 @@
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
-                                <i class="fas fa-clock"></i>
+                                <i class="fas fa-clock" aria-hidden="true"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="stat-value" id="statFocusTime">0h</div>
@@ -326,7 +347,7 @@
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="stat-value" id="statProductivity">0%</div>
@@ -337,7 +358,7 @@
                 </div>
 
                 <div class="sidebar-section">
-                    <h3>Upcoming Deadlines</h3>
+                    <h2>Upcoming Deadlines</h2>
                     <div class="deadlines-list" id="deadlinesList">
                         <!-- Dynamic content -->
                         <div class="empty-state">
@@ -347,16 +368,16 @@
                 </div>
 
                 <div class="sidebar-section">
-                    <h3>Quick Actions</h3>
+                    <h2>Quick Actions</h2>
                     <div class="quick-actions">
                         <button class="quick-action-btn" id="quickAddTask">
-                            <i class="fas fa-plus"></i> Add Task
+                            <i class="fas fa-plus" aria-hidden="true"></i> Add Task
                         </button>
                         <button class="quick-action-btn" id="quickAddGoal">
-                            <i class="fas fa-bullseye"></i> Set Goal
+                            <i class="fas fa-bullseye" aria-hidden="true"></i> Set Goal
                         </button>
                         <button class="quick-action-btn" id="quickStartTimer">
-                            <i class="fas fa-play"></i> Start Timer
+                            <i class="fas fa-play" aria-hidden="true"></i> Start Timer
                         </button>
                     </div>
                 </div>
@@ -365,56 +386,151 @@
             <!-- Page Content -->
             <div class="page-content" id="pageContent">
                 <!-- Dashboard Page -->
-                <div id="dashboardPage" class="page active">
+                <section id="dashboardPage" class="page active" aria-label="Dashboard">
                     <!-- Content loaded by JavaScript -->
-                </div>
+                </section>
 
                 <!-- Goals Page -->
-                <div id="goalsPage" class="page">
+                <section id="goalsPage" class="page" aria-label="Goals">
                     <!-- Content loaded by JavaScript -->
-                </div>
+                </section>
 
                 <!-- Tasks Page -->
-                <div id="tasksPage" class="page">
+                <section id="tasksPage" class="page" aria-label="Tasks">
                     <!-- Content loaded by JavaScript -->
-                </div>
+                </section>
 
                 <!-- Analytics Page -->
-                <div id="analyticsPage" class="page">
+                <section id="analyticsPage" class="page" aria-label="Analytics">
                     <!-- Content loaded by JavaScript -->
-                </div>
+                </section>
 
                 <!-- Profile Page -->
-                <div id="profilePage" class="page">
+                <section id="profilePage" class="page" aria-label="Profile">
                     <!-- Content loaded by JavaScript -->
-                </div>
+                </section>
             </div>
         </main>
 
+        <!-- Application Footer -->
+        <footer class="app-footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3 class="footer-heading">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            Azuka Dashboard
+                        </h3>
+                        <p class="footer-description">
+                            Your personal productivity companion. Track goals, manage tasks, and boost your efficiency.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Follow us on GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Join our Discord">
+                                <i class="fab fa-discord" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Connect on LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subheading">Product</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Features</a></li>
+                            <li><a href="#" class="footer-link">Pricing</a></li>
+                            <li><a href="#" class="footer-link">Roadmap</a></li>
+                            <li><a href="#" class="footer-link">Changelog</a></li>
+                            <li><a href="#" class="footer-link">API</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subheading">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Documentation</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Tutorials</a></li>
+                            <li><a href="#" class="footer-link">Community</a></li>
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subheading">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">About Us</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                            <li><a href="#" class="footer-link">Press</a></li>
+                            <li><a href="#" class="footer-link">Partners</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subheading">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                            <li><a href="#" class="footer-link">GDPR Compliance</a></li>
+                            <li><a href="#" class="footer-link">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; <span id="appCurrentYear"></span> Azuka Dashboard. All rights reserved.</p>
+                            <p class="footer-version">Version 1.0.0 | <span id="lastUpdated">Last updated: December 2024</span></p>
+                        </div>
+                        <div class="footer-actions">
+                            <button class="footer-btn" id="themeToggleFooter" aria-label="Toggle theme">
+                                <i class="fas fa-moon" aria-hidden="true"></i> Theme
+                            </button>
+                            <button class="footer-btn" id="feedbackBtn" aria-label="Send feedback">
+                                <i class="fas fa-comment" aria-hidden="true"></i> Feedback
+                            </button>
+                            <button class="footer-btn" id="backToTop" aria-label="Back to top">
+                                <i class="fas fa-arrow-up" aria-hidden="true"></i> Top
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <!-- Notifications Panel -->
-        <div class="notifications-panel" id="notificationsPanel">
+        <div class="notifications-panel" id="notificationsPanel" role="dialog" aria-modal="true" aria-label="Notifications">
             <div class="notifications-header">
                 <h3>Notifications</h3>
-                <button class="close-notifications">
-                    <i class="fas fa-times"></i>
+                <button class="close-notifications" aria-label="Close notifications">
+                    <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="notifications-list" id="notificationsList">
                 <!-- Dynamic content -->
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Modals -->
     <div class="modal-overlay" id="modalOverlay"></div>
 
     <!-- Create Goal Modal -->
-    <div class="modal" id="createGoalModal">
+    <div class="modal" id="createGoalModal" role="dialog" aria-modal="true" aria-label="Create Goal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2>Create New Goal</h2>
-                <button class="close-modal">
-                    <i class="fas fa-times"></i>
+                <button class="close-modal" aria-label="Close">
+                    <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
             </div>
             <form id="goalForm">
@@ -465,12 +581,12 @@
     </div>
 
     <!-- Create Task Modal -->
-    <div class="modal" id="createTaskModal">
+    <div class="modal" id="createTaskModal" role="dialog" aria-modal="true" aria-label="Create Task">
         <div class="modal-content">
             <div class="modal-header">
                 <h2>Add New Task</h2>
-                <button class="close-modal">
-                    <i class="fas fa-times"></i>
+                <button class="close-modal" aria-label="Close">
+                    <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
             </div>
             <form id="taskForm">
@@ -520,6 +636,86 @@
         </div>
     </div>
 
+    <!-- Timer Modal -->
+    <div class="modal" id="timerModal" role="dialog" aria-modal="true" aria-label="Timer">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Focus Timer</h2>
+                <button class="close-modal" aria-label="Close">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="timer-container">
+                <div class="timer-display">
+                    <div id="timerDisplay" class="timer-time">25:00</div>
+                    <div class="timer-label">Focus Session</div>
+                </div>
+                
+                <div class="timer-controls">
+                    <button id="timerStart" class="timer-btn timer-btn-primary">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="timerPause" class="timer-btn timer-btn-secondary" disabled>
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button id="timerReset" class="timer-btn timer-btn-secondary">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="timer-presets">
+                    <h3>Quick Presets</h3>
+                    <div class="preset-buttons">
+                        <button class="preset-btn" data-minutes="25">25 min Focus</button>
+                        <button class="preset-btn" data-minutes="5">5 min Break</button>
+                        <button class="preset-btn" data-minutes="15">15 min Break</button>
+                        <button class="preset-btn" data-minutes="50">50 min Deep Work</button>
+                    </div>
+                </div>
+                
+                <div class="timer-settings">
+                    <h3>Custom Timer</h3>
+                    <div class="custom-timer-inputs">
+                        <div class="input-group">
+                            <label for="customMinutes">Minutes:</label>
+                            <input type="number" id="customMinutes" min="1" max="120" value="25">
+                        </div>
+                        <div class="input-group">
+                            <label for="customSeconds">Seconds:</label>
+                            <input type="number" id="customSeconds" min="0" max="59" value="0">
+                        </div>
+                        <button id="setCustomTimer" class="timer-btn timer-btn-secondary">
+                            Set Custom
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="timer-alarm-settings">
+                    <h3>Alarm Settings</h3>
+                    <div class="alarm-options">
+                        <label class="checkbox">
+                            <input type="checkbox" id="enableSound" checked>
+                            <span>Play sound when timer ends</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="enableNotification" checked>
+                            <span>Show browser notification</span>
+                        </label>
+                        <div class="alarm-sound-select">
+                            <label for="alarmSound">Alarm Sound:</label>
+                            <select id="alarmSound">
+                                <option value="bell">Bell</option>
+                                <option value="chime">Chime</option>
+                                <option value="beep">Beep</option>
+                                <option value="notification">Notification</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/utils.js"></script>
@@ -527,5 +723,92 @@
     <script src="scripts/auth.js"></script>
     <script src="scripts/api.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/timer.js"></script>
+    
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeToggleFooter = document.getElementById('themeToggleFooter');
+            const body = document.body;
+            
+            // Check for saved theme or prefer-color-scheme
+            const savedTheme = localStorage.getItem('azuka-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            // Set initial theme
+            let currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+            body.setAttribute('data-theme', currentTheme);
+            updateThemeIcon(currentTheme);
+            
+            function toggleTheme() {
+                currentTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                localStorage.setItem('azuka-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+            
+            function updateThemeIcon(theme) {
+                const icon = themeToggle?.querySelector('i');
+                const footerIcon = themeToggleFooter?.querySelector('i');
+                
+                if (icon) {
+                    icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+                    themeToggle.setAttribute('aria-label', 
+                        theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+                }
+                
+                if (footerIcon) {
+                    footerIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+                    if (themeToggleFooter) {
+                        themeToggleFooter.innerHTML = `<i class="${footerIcon.className}" aria-hidden="true"></i> ${theme === 'dark' ? 'Light' : 'Dark'}`;
+                        themeToggleFooter.setAttribute('aria-label', 
+                            theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+                    }
+                }
+            }
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+            
+            if (themeToggleFooter) {
+                themeToggleFooter.addEventListener('click', toggleTheme);
+            }
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                if (!localStorage.getItem('azuka-theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    body.setAttribute('data-theme', newTheme);
+                    updateThemeIcon(newTheme);
+                }
+            });
+            
+            // Set current year in footer
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('#currentYear, #appCurrentYear');
+            yearElements.forEach(element => {
+                element.textContent = currentYear;
+            });
+            
+            // Back to top button
+            const backToTopBtn = document.getElementById('backToTop');
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Feedback button
+            const feedbackBtn = document.getElementById('feedbackBtn');
+            if (feedbackBtn) {
+                feedbackBtn.addEventListener('click', function() {
+                    alert('Thank you for your feedback! This feature is coming soon.');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -555,3 +555,83 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--gray-400);
 }
+.nav-brand-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: inherit;
+    /* Add any other styles from your original h1 styling */
+}
+
+/* Or if you want it to match exactly the h1 from auth section */
+.nav-brand .nav-brand-heading {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+/* CSS Variables for Theme */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --hover-color: #f3f4f6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --input-bg: #ffffff;
+    --input-border: #d1d5db;
+    --sidebar-bg: #f8f9fa;
+    --navbar-bg: #ffffff;
+    --footer-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+    --primary-color: #6366f1;
+    --secondary-color: #4f46e5;
+    --text-color: #f8fafc;
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+    --hover-color: #2d3748;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --input-bg: #1e293b;
+    --input-border: #475569;
+    --sidebar-bg: #1e293b;
+    --navbar-bg: #1e293b;
+    --footer-bg: #1e293b;
+}
+
+/* Apply CSS Variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-card,
+.modal-content,
+.stat-card,
+.navbar,
+.sidebar,
+.app-footer {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+input, select, textarea {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
